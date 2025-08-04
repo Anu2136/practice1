@@ -1,8 +1,9 @@
 ---
 name: Basic Commands
 on:
-  - push
-jobs:
+  push:
+    branches: -main
+jobs: 
   demo-commands:
     runs-on: ubuntu-latest
     steps:
