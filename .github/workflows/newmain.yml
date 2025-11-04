@@ -1,0 +1,12 @@
+name: Print the current date and time
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+
+jobs:
+  print-datetime:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print current date
+        run: echo "Current datetime:/$(date)"
